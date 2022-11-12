@@ -181,6 +181,9 @@ a{
     font: 38px 'Noto Sans SC', sans-serif;
     color: #FF4135;
 }
+a.logo{
+    text-decoration: none;
+}
 .logo span{
     color: #222;
 }
@@ -305,6 +308,7 @@ a{
 }
 
 /*--------------------------------------------------Bottom Header End-----------------------------------------------------*/
+
 
 /*----------------------------------------Sticky Header-----------------------------*/
 #sticky-header{
@@ -507,6 +511,32 @@ a{
     color: #fff;
     font-size: 20px;
 }
+/*----------------------------------------Mobile Menu End-----------------------------*/
+
+/*-----------------------------------------Breadcrumb Start-----------------------------*/
+.breadcrumb .row ul{
+    padding: 8px 0;
+    margin: 20px 0 50px 0;
+}
+.breadcrumb .row ul li{
+    display: inline-block;
+    font-size: 14px;
+    color: #555;
+}
+.breadcrumb ul>li+li:before{
+    padding: 0 5px;
+    color: #555;
+    content: "/\00a0";
+}
+.breadcrumb .row ul li a{
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+}
+.breadcrumb ul li.active{
+    color: #ff4135;
+}
+/*-----------------------------------------Breadcrumb End-----------------------------*/
 
 /*--------------------------------------------------Header Banner-----------------------------------------------------*/
 .head-banner {    
@@ -903,6 +933,139 @@ ul{
 }
 
 /*--------------------Scroll Button End------------------------------*/
+
+/*---------------------------------------Single Product Start----------------------------*/
+.single-prod .row{
+    display: flex;
+    align-items: top;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.single-prod .row .left-col{
+    padding: 20px;
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.single-prod .row .right-col{
+    padding: 20px;
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.single-prod img{
+    max-width: 100%
+}
+.single-prod .small-img-row {
+    display: flex;
+    justify-content: space-between;
+}
+.single-prod .small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+.single-prod .rating{
+    padding: 25px 0;
+}
+.single-prod .rating ul li{
+    display: inline-block;
+}
+.single-prod .rating ul>li+li:before{
+    content: '|\00a0';
+}
+.single-prod .row .right-col h2{
+    color: #ff4135;
+    font-size: 36px;
+    font-weight: 400;
+}
+.single-prod .order-form{
+    margin-top: 20px;
+}
+.single-prod .row-size{
+    margin-bottom: 20px;
+}
+.single-prod .row-color{
+    margin-bottom: 20px;
+}
+.single-prod .row-qty{
+    margin-bottom: 20px;
+}
+.single-prod select{
+    position: relative;
+    width: 100%;
+    border-color: #555;
+    padding: 8px;
+    outline: none;
+}
+
+.single-prod .order-form .row-size, .single-prod .order-form .row-color, .single-prod .order-form .row-qty{
+    display: flex;
+    flex-wrap: wrap;
+}
+.single-prod .order-form .left-col-size, .single-prod .order-form .left-col-color, .single-prod .order-form .left-col-qty{
+    flex: 10%;
+    align-self: center;
+    min-width: 50px;
+}
+.single-prod .order-form .right-col-size, .single-prod .order-form .right-col-color, .single-prod .order-form .right-col-qty{
+    flex: 90%;
+}
+
+.right-col-qty{
+    display: flex;
+}
+input.input-qty{
+    max-width: 30px;
+    text-align: center;
+    padding: 8px;
+    background: none;
+    border: 1px solid #555;
+    border-left: none;
+    border-right: none;
+    outline: none;
+}
+button.minus-item{
+    padding: 8px;
+    background: none;
+    border: 1px solid #555;
+    border-right: none;
+}
+button.plus-item{
+    padding: 8px;
+    background: none;
+    border: 1px solid #555;
+    border-left: none;
+}
+
+/*---------------------------------------Single Product End----------------------------*/
+
+/*---------------------------------------Product Tab Start---------------------------------------------*/
+.product-tab .tab-container{
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0px 20px rgb(0 0 0 / 10%);
+    padding: 30px 30px 80px 30px;
+    margin: 90px 0 75px 0;
+}
+.product-tab .tab-bar{
+    border-bottom: 1px solid #bcbcbc;
+    margin-bottom: 25px;
+    padding: 0px;
+}
+.product-tab .tab-name{
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    outline: none;
+    margin-bottom: -1px;
+    cursor: pointer;
+}
+.product-tab .active-red{
+    border-bottom: 1px solid #ff4135;
+    color: #ff4135;
+}
+
+/*---------------------------------------Product Tab End---------------------------------------------*/
 
 
 
