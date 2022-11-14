@@ -177,12 +177,10 @@ a{
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.logo{
+
+.logo, a.logo{
     font: 38px 'Noto Sans SC', sans-serif;
     color: #FF4135;
-}
-a.logo{
-    text-decoration: none;
 }
 .logo span{
     color: #222;
@@ -658,7 +656,7 @@ p.price{
     display: flex;
     padding: 50px 0;
 }
-.new-arrivals .title{
+.title{
     width: 100%;
     text-align: center;
 }
@@ -1066,6 +1064,116 @@ button.plus-item{
 }
 
 /*---------------------------------------Product Tab End---------------------------------------------*/
+
+/*---------------------------------------Contact Us Start---------------------------------------------*/
+.contactus{
+    margin: 90px 0;
+}
+.contactus .row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.contactus .row h3{
+    font-size: 18px;
+    color: 222;
+}
+.contactus .row h3:after{
+    content: '';
+    height: 3px;
+    width: 49px;
+    display: block;
+    margin-top: 12px;
+    background: #ff523b;
+}
+.contactus .left-col{
+    flex-basis: 66.66%;
+    width: 100%;
+    padding: 0 15px;
+}
+.contactus .right-col{
+    flex-basis: 33.33%;
+    width: 100%;
+    padding: 0 15px;
+}
+#contactForm{
+    margin-top: 42px;
+}
+#contactForm .field{
+    margin-right: -15px;
+    margin-left: -15px;
+}
+#contactForm .input-field{
+    width: 50%;
+    padding: 0 15px;
+    float: left;
+    margin-bottom: 32px;
+}
+#contactForm .textarea-field{
+    padding: 0 15px;
+    width: 100%;
+}
+#contactForm input{
+    width: 100%;
+    height: 33px;
+    padding: 15px;
+    outline: none;
+}
+#contactForm textarea{
+    width: 100%;
+    height: 200px;
+    padding: 15px;
+    outline: none;
+}
+.office-info{
+    margin-top: 30px;
+}
+.address-info{
+    display: flex;
+    margin-top: 42px;
+}
+.contactus .info-container .fa{
+    font-size: 30px;
+    padding-right: 15px;
+    color: #ff523b;
+    vertical-align: top;
+}
+.justify-center{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.justify-center .newsletter-input{
+    position: relative;
+    flex-basis: 40%;
+    margin-top: 37px;
+}
+
+.subscribe-field input{
+    width: 506px;
+    padding: 8px 10px;
+    border: 1px solid #555;
+    border-radius: 30px;
+    outline: none;
+}
+.subscribe-form .subscribe-field button{
+    position: absolute;
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    border-radius: 30px;
+    top: 0;
+    right: 0;
+    transition: background 0.5s;
+    border: 1px solid #ff523b;
+}
+.subscribe-form .subscribe-field button:hover{
+    background: #563434;
+    border: 1px solid #563434;
+}
+/*---------------------------------------Contact Us End-----------------------------------------------*/
+
+
 
 
 
