@@ -1174,7 +1174,7 @@ button.plus-item{
 }
 /*---------------------------------------Contact Us End-----------------------------------------------*/
 
-/*---------------------------------------Shop Left Side Start-----------------------------------------------*/
+/*---------------------------------------Shop Start-----------------------------------------------*/
 
 .shop .container .row{
     width: 100%;
@@ -1187,6 +1187,7 @@ button.plus-item{
     padding: 0 15px;
 }
 .shop .search-bar{
+    position: relative;
     margin: 20px 0 46px 0;
 }
 .shop .search-bar input{
@@ -1194,6 +1195,13 @@ button.plus-item{
     padding: 8px;
     outline: none;
     border: 1px solid #555;
+}
+.search-icon img{
+    position: absolute;
+    right: 15px;
+    top: 7px;
+    width: 22px;
+    cursor: pointer;
 }
 .sidebar-categories{
     margin-bottom: 46px;
@@ -1294,12 +1302,81 @@ select.sort-by{
     font-size: 30px;
     margin-left: 10px;
 }
-.shop-grid .col-4{
-    padding: 15px;
-    min-width: 200px;
+.view-button{
+    cursor: pointer;
+    color: #bcbcbc;
 }
+.view-button:hover{
+    color: #ff523b;
+}
+.view-button.active{
+    color: #ff523b;
+}
+.grid-view .col-4{
+    padding: 0;
+    min-width: 200px;
+    margin: 0;
+    display: table-caption;
+}
+.grid-view .grid-content{
+    display: block;
+    max-width: 200px;
+    margin: 15px 0 40px 0;
+}
+.grid-view .product-wrap .prod-img{
+    margin: 0;
+}
+.grid-view .list_content{
+    display: none;
+}
+.list-view .grid-content{
+    display: none;
+}
+.list-view .product-wrap{
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+.list-view .col-4{
+    padding: 15px;
+    min-width: 280px;
+    margin: 0;
+}
+.list-view .col-4 .prod-img{
+    margin-bottom: 0;
+}
+.list-view .list_content{
+    margin-left: 15px;
+}
+.list-view h4, .list-view p{
+    margin-bottom: 20px;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 70px 0;
+  }
+  
+  .pagination a {
+    color: white;
+    background: #d9d9d9;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    margin: 4px 2px;
+  }
+  
+  .pagination a.active {
+    background-color: #ff523b;
+    color: white;
+    border: 1px solid #ff523b;
+  }
+  
+  .pagination a:hover:not(.active) {background-color: #ff523b;}
 
-/*---------------------------------------Shop Left Side End-----------------------------------------------*/
+/*---------------------------------------Shop End-----------------------------------------------*/
 
 
 
@@ -1474,7 +1551,16 @@ select.sort-by{
     .shop-grid .col-4{
         min-width: 250px;
     }
-
+}
+@media only screen and (max-width: 500px)
+{
+    .grid-control-left{
+        justify-content: center;
+    }
+    .shop .rightside-container .shop-grid-control {
+        display: block;
+        text-align: center;
+     }
 }
 /*--------------------------------------------------media query for Footer  -----------------------------------------------------*/
 @media only screen and (max-width: 549px)
