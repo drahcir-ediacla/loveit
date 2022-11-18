@@ -1041,7 +1041,7 @@ button.plus-item{
     width: 100%;
     background-color: #fff;
     box-shadow: 0 0px 20px rgb(0 0 0 / 10%);
-    padding: 30px 30px 80px 30px;
+    padding: 30px;
     margin: 90px 0 75px 0;
 }
 .product-tab .tab-bar{
@@ -1063,7 +1063,48 @@ button.plus-item{
     border-bottom: 1px solid #ff4135;
     color: #ff4135;
 }
+.customer-review{
+    display: flex;
+    padding-bottom: 25px;
+    margin-top: 25px;
+    border-bottom: 1px solid #bcbcbc;
+}
+.review-content, .customer-pic{
+    padding: 10px;
+}
 
+.your-rating li{
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 25px 5px;
+}
+#reviewForm .field{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#reviewForm textarea{
+    width: 100%;
+    height: 200px;
+    padding: 15px;
+    outline: none;
+}
+#reviewForm .textarea-field{
+    flex-basis: 100%;
+    margin-bottom: 25px;
+}
+#reviewForm .input-field{
+    min-width: 200px;
+    margin-bottom: 32px;
+    flex-basis: 48%;
+}
+#reviewForm input{
+    width: 100%;
+    height: 33px;
+    padding: 15px;
+    outline: none;
+}
 /*---------------------------------------Product Tab End---------------------------------------------*/
 
 /*---------------------------------------Contact Us Start---------------------------------------------*/
@@ -1298,6 +1339,10 @@ select.sort-by{
     display: flex;
     align-items: center;
 }
+.button-container{
+    display: flex;
+    justify-content: center;
+}
 .grid-control-right .fa{
     font-size: 30px;
     margin-left: 10px;
@@ -1336,6 +1381,7 @@ select.sort-by{
     display: flex;
     align-items: center;
     padding: 0;
+    margin: 20px 0;
 }
 .list-view .col-4{
     padding: 15px;
@@ -1350,6 +1396,12 @@ select.sort-by{
 }
 .list-view h4, .list-view p{
     margin-bottom: 20px;
+}
+.list-view .list_content ul li{
+    display: inline;
+}
+.list-view .list_content ul li+li::before{
+    content: '|\00a0';
 }
 .pagination {
     display: flex;
@@ -1545,11 +1597,14 @@ select.sort-by{
     .shop-grid-control{
         margin-top: 50px;
     }
-    .grid-control-right .fa{
-        display: none;
-    }
     .shop-grid .col-4{
         min-width: 250px;
+    }
+}
+@media only screen and (max-width: 550px)
+{
+    .list-view .product-wrap{
+        display: block;
     }
 }
 @media only screen and (max-width: 500px)
@@ -1562,6 +1617,29 @@ select.sort-by{
         text-align: center;
      }
 }
+@media only screen and (max-width: 350px)
+{
+    .grid-control-right{
+        display: block;
+    }
+    .button-container{
+        margin-bottom: 20px;
+    }
+}
+/*--------------------------------------------------media query for Shop Grid End  -----------------------------------------------------*/
+
+/*--------------------------------------------------media query for Product Review Tab -----------------------------------------------------*/
+@media only screen and (max-width: 500px)
+{
+    .customer-review{
+        display: block;
+    }
+    #reviewForm .input-field{
+        flex-basis: 100%;
+    }
+}
+/*--------------------------------------------------media query for Product Review Tab -----------------------------------------------------*/
+
 /*--------------------------------------------------media query for Footer  -----------------------------------------------------*/
 @media only screen and (max-width: 549px)
 {

@@ -380,21 +380,56 @@
     <div class="container">
         <div class="tab-container">
             <div class="tab-bar">
-                <button class="tab-name tablink active-red" onclick="openContent(event,'Description')">Description</button>
-                <button class="tab-name tablink" onclick="openContent(event,'Review')">Review</button>
+                <button class="tab-name tablink" onclick="openContent(event,'Description')">Description</button>
+                <button class="tab-name tablink active-red" onclick="openContent(event,'Review')">Review</button>
             </div>
-            <div id="Description" class="content info">
+            <div id="Description" class="content info" style="display:none">
                 <h2>Description</h2>
                 <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies 
                     eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. 
                     Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies 
                     eget, tempor sit amet, ante.</p>
             </div>
-            <div id="Review" class="content info"  style="display:none">
-                <h2>Review</h2>
-                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies 
-                    eget, tempor sitmorbi tristique senectus et netus et malesuada fonec eu libero sit amet quam egestas seames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies 
-                    eget, tempor sit amet, ante.</p>
+            <div id="Review" class="content info">
+                <h3>1 Review for Men’s Printed Regular Shirt </h3>
+                <div class="customer-review">
+                    <div class="customer-pic">
+                        <img src="images/review-1.png">
+                    </div>
+                    <div class="review-content">
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>Richard Alcaide <span style="color: #8a8a8a;">- May 1, 2020</span></p><br>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. </p>
+                    </div>
+                </div>
+                <div class="your-rating">
+                    <ul>
+                        <li>Your Rating</li>
+                        <li>
+                            <div class="rating">
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <form id="reviewForm">
+                    <div class="field">
+                        <div class="textarea-field"><textarea id="msgField" type="text" placeholder="Write your review here..."></textarea></div>
+                        <div class="input-field"><input type="text" placeholder="Name"></div>
+                        <div class="input-field"><input type="email" placeholder="Email"></div>
+                    </div>
+                    <a href="#" class="btn">Send Message</a>
+                </form>
             </div>
         </div>
     </div>
