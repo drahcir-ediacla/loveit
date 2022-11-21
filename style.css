@@ -234,7 +234,7 @@ a{
     top: 100px;
     opacity: 0.9;
     visibility: hidden;
-    z-index: 1;
+    z-index: 555;
 }
 .nav-links .drop-menu ul{
     background: #fff;
@@ -272,7 +272,7 @@ a{
     visibility: hidden;    
     top: 100px;
     box-shadow: 0 6px 10px rgba(0,0,0,0.15);
-    z-index: 1;
+    z-index: 555;
     padding-bottom: 30px;
 }
 .mega-menu .row{
@@ -556,19 +556,22 @@ a{
     position: relative;
     flex-wrap: wrap;
     padding-top: 20px;
+    height: 711px;
     align-items: flex-end;
     justify-content: space-around;  
 }
 .head-banner .left-col{
-    flex-basis: 50%;
+    flex-basis: 40%;
     min-width: 300px;
     color: #222;
     margin: auto;
+    z-index: 5;
 }
 .head-banner h1, .head-banner span, .head-banner h4{
     font-size: 64px;
     font-family: 'Kanit', sans-serif;
     letter-spacing: 3px;
+    animation-duration: 1500ms;
 }
 .head-banner span{
     color: #FF4135;
@@ -599,15 +602,39 @@ a{
     text-decoration: none;
 }
 .head-banner .right-col{
-    flex-basis: 50%;
+    flex-basis: 60%;
     min-width: 300px;
-    text-align: center;   
     display: flex;
+    justify-content: center;
     
 }
 .head-banner .right-col img{
     max-width: 100%;
     height: auto;
+}
+.owl-carousel .owl-item img {
+    transform-style: preserve-3d;
+}
+
+.owl-nav{
+    position: absolute;
+}
+.owl-dots{
+    position: absolute;
+    left: 0px;
+    bottom: 20px;
+    width: 100%;
+}
+
+/*--------------------------------------------------Header Banner Animation-----------------------------------------------------*/
+.head-banner .owl-item.active h1{
+    animation: fadeInDown ease 1s;
+}
+.head-banner .owl-item.active h4, .head-banner .owl-item.active p{
+    animation: fadeInRight ease 1s;
+}
+.head-banner .owl-item.active a, .head-banner .owl-item.active img{
+    animation: fadeInUp ease 1s;
 }
 
 /*--------------------------------------------------Header Banner End-----------------------------------------------------*/
@@ -768,7 +795,6 @@ p.price{
     outline: 1px solid #fff;
     outline-offset: -15px;
 }  
-
 .sml-banner .left-col h2{
     font-weight: bold;
     color: #222;
@@ -1397,6 +1423,10 @@ select.sort-by{
 .list-view h4, .list-view p{
     margin-bottom: 20px;
 }
+.list-view p.price{
+    margin-top: 20px;
+    margin-bottom: 0;
+}
 .list-view .list_content ul li{
     display: inline;
 }
@@ -1497,6 +1527,12 @@ select.sort-by{
     }
 
 }
+@media only screen and (max-width: 800px)
+{
+    .head-banner .right-col{
+        display: none;
+    }
+}
 /*--------------------media query for Header Banner End------------------------------*/
 
 /*------------------------------------------media query for Homepage Category-----------------------------------------*/
@@ -1532,6 +1568,18 @@ select.sort-by{
     }
 }
 /*--------------------------------------------------media query for New Arrivals End-----------------------------------------------------*/
+
+/*--------------------------------------------------media query for Small Banner  -----------------------------------------------------*/
+@media only screen and (max-width: 780px)
+{
+    .sml-banner .row{
+        background-image: none;
+        justify-content: center;
+        background: radial-gradient(#fff,#ffd6d6);
+    }
+}
+
+/*--------------------------------------------------media query for Small Banner  -----------------------------------------------------*/
 
 /*--------------------------------------------------media query for Promo  -----------------------------------------------------*/
 @media only screen and (max-width: 820px)
@@ -1650,3 +1698,13 @@ select.sort-by{
         text-align: center;
     }
 }
+
+
+/*--------------------------------------------------Testing Animation -----------------------------------------------------*/
+
+.banner .owl-item.active h1{
+    animation: fadeInDown ease 1s;
+}
+
+
+

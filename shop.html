@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="assets/script.js"></script>
     
     <title>Loveit | Shop</title>
 </head>
@@ -477,8 +478,8 @@
                                                             <li>5 Review(s)</li>
                                                         </ul>
                                                     </div>
+                                                    <p class="price">$50.00</p>
                                                     <a href="#" class="btn">Add To Cart</a>
-                                                    <p>$50.00</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -518,8 +519,8 @@
                                                             <li>5 Review(s)</li>
                                                         </ul>
                                                     </div>
+                                                    <p class="price">$50.00</p>
                                                     <a href="#" class="btn">Add To Cart</a>
-                                                    <p>$50.00</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -559,8 +560,8 @@
                                                             <li>5 Review(s)</li>
                                                         </ul>
                                                     </div>
+                                                    <p class="price">$50.00</p>
                                                     <a href="#" class="btn">Add To Cart</a>
-                                                    <p>$50.00</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -600,8 +601,8 @@
                                                             <li>5 Review(s)</li>
                                                         </ul>
                                                     </div>
+                                                    <p class="price">$50.00</p>
                                                     <a href="#" class="btn">Add To Cart</a>
-                                                    <p>$50.00</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -641,8 +642,8 @@
                                                             <li>5 Review(s)</li>
                                                         </ul>
                                                     </div>
+                                                    <p class="price">$50.00</p>
                                                     <a href="#" class="btn">Add To Cart</a>
-                                                    <p>$50.00</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -682,8 +683,8 @@
                                                             <li>5 Review(s)</li>
                                                         </ul>
                                                     </div>
+                                                    <p class="price">$50.00</p>
                                                     <a href="#" class="btn">Add To Cart</a>
-                                                    <p>$50.00</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -723,8 +724,8 @@
                                                             <li>5 Review(s)</li>
                                                         </ul>
                                                     </div>
+                                                    <p class="price">$50.00</p>
                                                     <a href="#" class="btn">Add To Cart</a>
-                                                    <p>$50.00</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -764,8 +765,8 @@
                                                             <li>5 Review(s)</li>
                                                         </ul>
                                                     </div>
+                                                    <p class="price">$50.00</p>
                                                     <a href="#" class="btn">Add To Cart</a>
-                                                    <p>$50.00</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -805,8 +806,8 @@
                                                             <li>5 Review(s)</li>
                                                         </ul>
                                                     </div>
+                                                    <p class="price">$50.00</p>
                                                     <a href="#" class="btn">Add To Cart</a>
-                                                    <p>$50.00</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -846,8 +847,8 @@
                                                             <li>5 Review(s)</li>
                                                         </ul>
                                                     </div>
+                                                    <p class="price">$50.00</p>
                                                     <a href="#" class="btn">Add To Cart</a>
-                                                    <p>$50.00</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -887,8 +888,8 @@
                                                             <li>5 Review(s)</li>
                                                         </ul>
                                                     </div>
+                                                    <p class="price">$50.00</p>
                                                     <a href="#" class="btn">Add To Cart</a>
-                                                    <p>$50.00</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -928,8 +929,8 @@
                                                             <li>5 Review(s)</li>
                                                         </ul>
                                                     </div>
+                                                    <p class="price">$50.00</p>
                                                     <a href="#" class="btn">Add To Cart</a>
-                                                    <p>$50.00</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1002,142 +1003,6 @@
 
 <!-----------------------------------------Footer End------------------------------------------------->
 
-     <!----------------------------------------  JAVASCRIPT  ----------------------------->   
-<!----------------------------------------  JS for Sticky Header  ----------------------------->  
-<script>
-    // When the user scrolls down 80px from the top of the document, slide down the navbar
-    window.onscroll = function() {scrollFunction()};
-    
-    function scrollFunction() {
-      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        document.getElementById("sticky-header").style.top = "0";
-        document.getElementById("sticky-header").style.opacity = "1";
-        document.getElementById("scroll-top").style.top = "90%";
-      } else {
-        document.getElementById("sticky-header").style.top = "-100px";        
-        document.getElementById("sticky-header").style.opacity = "0";
-        document.getElementById("scroll-top").style.top = "-10%"; 
-      }
-    }
-</script>
-<!----------------------------------------  JS for Sticky Header End ----------------------------->  
-
-<!----------------------------------------  JS for Shop Accordion  ----------------------------->  
-<script> 
-    $(".main-category > a").on("click", function(){
-       if($(this).hasClass('active')){
-         $(this).removeClass("active");
-         $(this).siblings('.content').slideUp(500);
-         $(".main-category > a i").removeClass("fa-minus").addClass("fa-plus");
-       }else{
-         $(".main-category > a i").removeClass("fa-minus").addClass("fa-plus");
-       $(this).find("i").removeClass("fa-plus").addClass("fa-minus");
-       $(".main-category > a").removeClass("active");
-       $(this).addClass("active");
-       $('.content').slideUp(500);
-       $(this).siblings('.content').slideDown(500);
-       }
-       
-     });
-   </script>
-<!----------------------------------------  JS for Shop Accordion End ----------------------------->  
-
-<!----------------------------------------  JS for Grid Filter  ----------------------------->  
-<script>
-        $('.view-button.grid').on('click', function(){
-    	if($(this).hasClass('active')) return false;
-    	$('.shop-grid').fadeOut(function(){
-    		$('.shop-grid').removeClass('list-view').addClass('grid-view');
-    		$(this).fadeIn();
-    	});
-    	$(this).parent().find('.active').removeClass('active');
-    	$(this).addClass('active');
-    });
-
-    $('.view-button.list').on('click', function(){
-    	if($(this).hasClass('active')) return false;
-    	$('.shop-grid').fadeOut(function(){
-    		$('.shop-grid').removeClass('grid-view').addClass('list-view');
-    		$(this).fadeIn();
-    	});
-    	$(this).parent().find('.active').removeClass('active');
-    	$(this).addClass('active');
-    });
-	 
-</script>
-<!----------------------------------------  JS for Grid Filter End  -----------------------------> 
-
-<!----------------------------------------  JS for Mobile Menu  ----------------------------->  
-<script>
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
-    
-    for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.maxHeight){
-          content.style.maxHeight = null;
-        } else {
-          content.style.maxHeight = content.scrollHeight + "px";
-        } 
-      });
-    }
-</script>
-
-<script>
-    var burgerBtn = document.getElementById("burgerBtn");
-    var closeBtn = document.getElementById("closeBtn");
-    var menuBkgrnd = document.getElementById("menuBkgrnd");
-    var mobileMenu = document.getElementById("mobileMenu");
-
-    mobileMenu.style.right = "-300px";
-    menuBkgrnd.style.right = "-100%";
-    burgerBtn.onclick = function(){
-        if(mobileMenu.style.right == "-300px"){
-            mobileMenu.style.right = "0";
-        }
-        if(menuBkgrnd.style.right == "-100%"){
-                menuBkgrnd.style.right = "0";
-        }
-        else{
-            mobileMenu.style.right = "-300px";
-            mobileMenu.style.right = "-100%";
-        }
-    }
-    mobileMenu.style.right = "-300px";
-    menuBkgrnd.style.right = "-100%";
-    menuBkgrnd.onclick = function(){
-        if(mobileMenu.style.right == "-300px"){
-            mobileMenu.style.right = "0";
-        }
-        if(menuBkgrnd.style.right == "-100%"){
-                menuBkgrnd.style.right = "0";
-        }
-        else{
-            mobileMenu.style.right = "-300px";
-            menuBkgrnd.style.right = "-100%";
-        }
-    }
-    mobileMenu.style.right = "-300px";
-    menuBkgrnd.style.right = "-100%";
-    closeBtn.onclick = function(){
-        if(mobileMenu.style.right == "-300px"){
-            mobileMenu.style.right = "0";
-        }
-        if(menuBkgrnd.style.right == "-100%"){
-                menuBkgrnd.style.right = "0";
-        }
-        else{
-            mobileMenu.style.right = "-300px";
-            menuBkgrnd.style.right = "-100%";
-        }
-    }
-</script>
-<!----------------------------------------  JS for Mobile Menu End -----------------------------> 
-
-
-
-     <!----------------------------------------  JAVASCRIPT End -----------------------------> 
+     
 </body>
 </html>
