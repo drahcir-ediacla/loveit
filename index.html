@@ -93,11 +93,11 @@
                             <div class="col">
                                 <h4>Shop Page</h4>
                                 <ul>
-                                    <li><a href="#">Shop Page 01</a></li>
-                                    <li><a href="#">Shop Page 02</a></li>
-                                    <li><a href="#">Shop Page 03</a></li>
-                                    <li><a href="#">Shop Page 04</a></li>
-                                    <li class="last-list"><a href="#">Shop Page 05</a></li>
+                                    <li><a href="shop.html">Shop Page 01</a></li>
+                                    <li><a href="shop.html">Shop Page 02</a></li>
+                                    <li><a href="shop.html">Shop Page 03</a></li>
+                                    <li><a href="shop.html">Shop Page 04</a></li>
+                                    <li class="last-list"><a href="shop.html">Shop Page 05</a></li>
                                 </ul>
                             </div>
                             <div class="col">
@@ -133,9 +133,9 @@
         </div>
         <div class="header-icon">
             <ul>
-                <li><img src="images/magnifying-glass.png" width="25px"></i></li>
+                <li><img src="images/magnifying-glass.png" width="25px" onclick="openSearch()"></i></li>
                 <li><i class="fa fa-heart-o"></i></li>
-                <li><i class="fa fa-user-o"></i></li>
+                <li><i class="fa fa-user-o" onclick="document.getElementById('reg-login').style.display='flex'"></i></li>
                 <li><img src="images/cart.png" width="25px"></i></li>
             </ul>
         </div>
@@ -168,7 +168,7 @@
                         <div class="mega-menu">
                             <div class="row">
                                 <div class="col">
-                                    <img src="images/gallery-1.jpg">
+                                    <img src="images/product-10.jpg">
                                 </div>
                                 <div class="col">
                                     <h4>Shop Page</h4>
@@ -212,6 +212,45 @@
     </div>
 </header>   
 <!----------------------------------------Sticky Header End----------------------------->
+
+<!----------------------------------------User Login ----------------------------->
+
+<div id="reg-login">
+    <div class="form-container">
+        <div class="form-btn">
+            <span onclick="login()">Login</span>
+            <span onclick="register()">Register</span>
+            <hr id="Indicator" style="transform: translateX(100px);">
+        </div>
+        <form id="LoginForm" style="transform: translateX(0px);">
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <button type="submit" class="btn">Login</button>
+            <a href="">Forgot Password</a>
+        </form>
+        <form id="RegForm" style="transform:translateX(0px)">
+            <input type="text" placeholder="Username">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <button type="submit" class="btn">Register</button>
+        </form>
+    </div>
+</div>
+
+<!----------------------------------------User Login End----------------------------->
+
+<!----------------------------------------Search Fullscreen Start ----------------------------->
+<div id="myOverlay" class="overlay">
+    <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+    <div class="overlay-content">
+      <form>
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+  </div>
+
+<!----------------------------------------Search Fullscreen End ----------------------------->
 
 <!----------------------------------------Mobile Menu----------------------------->
 
@@ -283,6 +322,9 @@
         </div>
     </nav>
 </div>
+<!----------------------------------------Mobile Menu End----------------------------->
+
+
 
 <!----------------------------------------Header Banner----------------------------->
      <section class="head-banner">
@@ -389,7 +431,7 @@
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="prod-img"><a href="#">
+                    <div class="prod-img"><a href="product.html">
                         <img src="images/product-12.jpg">
                         <div class="prod-details-btn">
                         PRODUCT DETAILS
@@ -406,7 +448,7 @@
                     <p>$50.00</p>
                 </div>
                 <div class="col-4">
-                    <div class="prod-img"><a href="#">
+                    <div class="prod-img"><a href="product.html">
                         <img src="images/product-8.jpg">
                         <div class="prod-details-btn">
                         PRODUCT DETAILS
@@ -423,7 +465,7 @@
                     <p>$50.00</p>
                 </div>
                 <div class="col-4">
-                    <div class="prod-img"><a href="#">
+                    <div class="prod-img"><a href="product.html">
                         <img src="images/product-6.jpg">
                         <div class="prod-details-btn">
                         PRODUCT DETAILS
@@ -504,7 +546,7 @@
         </div>
         <div class="row-2">
             <div class="col-4">
-                <div class="prod-img"><a href="#">
+                <div class="prod-img"><a href="product.html">
                     <img src="images/product-1.jpg">
                     <div class="prod-details-btn">
                     PRODUCT DETAILS
@@ -521,7 +563,7 @@
                 <p>$50.00</p>
             </div>
             <div class="col-4">
-                <div class="prod-img"><a href="#">
+                <div class="prod-img"><a href="product.html">
                     <img src="images/product-7.jpg">
                     <div class="prod-details-btn">
                     PRODUCT DETAILS
@@ -538,7 +580,7 @@
                 <p>$50.00</p>
             </div>
             <div class="col-4">
-                <div class="prod-img"><a href="#">
+                <div class="prod-img"><a href="product.html">
                     <img src="images/product-3.jpg">
                     <div class="prod-details-btn">
                     PRODUCT DETAILS
@@ -555,7 +597,7 @@
                 <p>$50.00</p>
             </div>
             <div class="col-4">
-                <div class="prod-img"><a href="#">
+                <div class="prod-img"><a href="product.html">
                     <img src="images/product-10.jpg">
                     <div class="prod-details-btn">
                     PRODUCT DETAILS
@@ -574,7 +616,7 @@
         </div>
         <div class="row-2">
             <div class="col-4">
-                <div class="prod-img"><a href="#">
+                <div class="prod-img"><a href="product.html">
                     <img src="images/product-5.jpg">
                     <div class="prod-details-btn">
                     PRODUCT DETAILS
@@ -591,7 +633,7 @@
                 <p>$50.00</p>
             </div>
             <div class="col-4">
-                <div class="prod-img"><a href="#">
+                <div class="prod-img"><a href="product.html">
                     <img src="images/product-12.jpg">
                     <div class="prod-details-btn">
                     PRODUCT DETAILS
@@ -608,7 +650,7 @@
                 <p>$50.00</p>
             </div>
             <div class="col-4">
-                <div class="prod-img"><a href="#">
+                <div class="prod-img"><a href="product.html">
                     <img src="images/product-8.jpg">
                     <div class="prod-details-btn">
                     PRODUCT DETAILS
@@ -625,7 +667,7 @@
                 <p>$50.00</p>
                 </div>
             <div class="col-4">
-                <div class="prod-img"><a href="#">
+                <div class="prod-img"><a href="product.html">
                     <img src="images/product-6.jpg">
                     <div class="prod-details-btn">
                     PRODUCT DETAILS
@@ -739,10 +781,30 @@ owl.owlCarousel({
     autoplayTimeout:5000,
     autoplayHoverPause:false,
 });
-
-    
-    
-
 </script>
+<script>
+    var LoginForm = document.getElementById("LoginForm");
+    var RegForm = document.getElementById("RegForm");
+    var Indicator = document.getElementById("Indicator");
+        function register(){
+            RegForm.style.transform = "translateX(0px)";
+            LoginForm.style.transform = "translateX(0px)";
+            Indicator.style.transform = "translateX(100px)";
+        }
+        function login(){
+            RegForm.style.transform = "translateX(300px)";
+            LoginForm.style.transform = "translateX(300px)";
+            Indicator.style.transform = "translateX(0px)";
+        }
+</script>
+<script>
+    function openSearch() {
+      document.getElementById("myOverlay").style.display = "block";
+    }
+    
+    function closeSearch() {
+      document.getElementById("myOverlay").style.display = "none";
+    }
+    </script>
 </body>
 </html>

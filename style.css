@@ -215,6 +215,7 @@ a{
     display: inline-flex;
     margin-left: 20px;
     vertical-align: middle;
+    cursor: pointer;
 }
 .header-icon .fa{
     font-size: 25px;
@@ -511,6 +512,147 @@ a{
     font-size: 20px;
 }
 /*----------------------------------------Mobile Menu End-----------------------------*/
+
+/*----------------------------------------User Login Start-----------------------------*/
+#reg-login{
+    position: fixed;
+    margin: auto;
+    width: 100%;
+    z-index: 11;
+    text-align: center;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+    background-color: #ff413590;
+}
+#reg-login .form-container {
+    background: #fff;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgb(0 0 0 / 10%);
+    overflow: hidden;
+}
+#reg-login .form-container span {
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+#reg-login .form-container form {
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+    transition: transform 1s;
+}
+#reg-login .form-container form input {
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+}
+#reg-login .form-container form .btn {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+#reg-login .form-container form a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #555;
+}
+#reg-login .form-btn {
+    display: inline-block;
+}
+#Indicator {
+    width: 100px;
+    border: none;
+    background: #ff523b;
+    height: 3px;
+    margin: 8px;
+    transform: translateX(100px);
+    transition: transform 1s;
+}
+#LoginForm {
+    left: -300px;
+}
+#RegForm {
+    left: 0;
+}
+
+/*----------------------------------------User Login End-----------------------------*/
+
+/*---------------------------------------Search Fullscreen Start ---------------------------*/
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 12;
+    top: 0;
+    left: 0;
+    background-color: #ff413590;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 46%;
+    width: 80%;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .overlay .closebtn:hover {
+    color: #ccc;
+  }
+  
+  .overlay input[type=text] {
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+    float: left;
+    width: 80%;
+    background: white;
+    outline: none;
+  }
+  
+  .overlay input[type=text]:hover {
+    background: #f1f1f1;
+  }
+  
+  .overlay button {
+    float: left;
+    width: 20%;
+    padding: 15px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .overlay button:hover {
+    background: #bbb;
+  }
+/*---------------------------------------Search Fullscreen End ---------------------------*/
 
 /*-----------------------------------------Breadcrumb Start-----------------------------*/
 .breadcrumb .row ul{
