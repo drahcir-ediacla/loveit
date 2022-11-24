@@ -131,9 +131,9 @@
         </div>
         <div class="header-icon">
             <ul>
-                <li><img src="images/magnifying-glass.png" width="25px"></i></li>
+                <li><img src="images/magnifying-glass.png" width="25px" onclick="openSearch()"></i></li>
                 <li><i class="fa fa-heart-o"></i></li>
-                <li><i class="fa fa-user-o"></i></li>
+                <li><i class="fa fa-user-o" onclick="document.getElementById('reg-login').style.display='flex'"></i></li>
                 <li><img src="images/cart.png" width="25px"></i></li>
             </ul>
         </div>
@@ -210,6 +210,46 @@
     </div>
 </header>   
 <!----------------------------------------Sticky Header End----------------------------->
+
+<!----------------------------------------User Login ----------------------------->
+
+<div id="reg-login">
+    <span class="closebtn" onclick="document.getElementById('reg-login').style.display='none'">×</span>
+    <div class="form-container">
+        <div class="form-btn">
+            <span onclick="login()">Login</span>
+            <span onclick="register()">Register</span>
+            <hr id="Indicator" style="transform: translateX(100px);">
+        </div>
+        <form id="LoginForm" style="transform: translateX(0px);">
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <button type="submit" class="btn">Login</button>
+            <a href="">Forgot Password</a>
+        </form>
+        <form id="RegForm" style="transform:translateX(0px)">
+            <input type="text" placeholder="Username">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <button type="submit" class="btn">Register</button>
+        </form>
+    </div>
+</div>
+
+<!----------------------------------------User Login End----------------------------->
+
+<!----------------------------------------Search Fullscreen Start ----------------------------->
+<div id="myOverlay" class="overlay">
+    <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+    <div class="overlay-content">
+      <form>
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+  </div>
+
+<!----------------------------------------Search Fullscreen End ----------------------------->
 
 <!----------------------------------------Mobile Menu----------------------------->
 
@@ -590,6 +630,30 @@
       evt.currentTarget.className += " active-red";
     }
 </script>
+<script>
+    var LoginForm = document.getElementById("LoginForm");
+    var RegForm = document.getElementById("RegForm");
+    var Indicator = document.getElementById("Indicator");
+        function register(){
+            RegForm.style.transform = "translateX(0px)";
+            LoginForm.style.transform = "translateX(0px)";
+            Indicator.style.transform = "translateX(100px)";
+        }
+        function login(){
+            RegForm.style.transform = "translateX(300px)";
+            LoginForm.style.transform = "translateX(300px)";
+            Indicator.style.transform = "translateX(0px)";
+        }
+</script>
+<script>
+    function openSearch() {
+      document.getElementById("myOverlay").style.display = "block";
+    }
+    
+    function closeSearch() {
+      document.getElementById("myOverlay").style.display = "none";
+    }
+    </script>
 <!----------------------------------------  JS for Product Tab End -----------------------------> 
      <!----------------------------------------  JAVASCRIPT End -----------------------------> 
 </body>

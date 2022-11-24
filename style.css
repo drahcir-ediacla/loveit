@@ -612,7 +612,7 @@ a{
     margin: auto;
   }
   
-  .overlay .closebtn {
+  .closebtn {
     position: absolute;
     top: 20px;
     right: 45px;
@@ -800,6 +800,7 @@ a{
     justify-content: center;
     margin-bottom: 20px;
     cursor: pointer;
+    border-radius: 20px;
     transition: transform 0.5s;
 }
 .hm-category .col-3:hover{
@@ -820,6 +821,66 @@ p.price{
     color: #FF4135;
 }
 /*--------------------------------------------------Homepage Category End-----------------------------------------------------*/
+
+/*--------------------------------------------------Deal of the Week-----------------------------------------------------*/
+.deal-week .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.deal-week .col-2{
+    display: block;
+    flex-basis: 50%;
+    margin: auto;
+    text-align: center;
+    padding: 15px;
+}
+.deal-week .col-2 img{
+    max-width: 80%;
+    min-width: 200px;
+}
+.deal-week .col-2 p{
+    margin-bottom: 25px;
+}
+.deal-week .col-2 h4{
+    position: relative;
+    font-size: 28px;
+    margin-bottom: 32px;
+}
+.deal-week .col-2 h4:after{
+    position: absolute;
+    left: 0;
+    right: 0;
+    content: '';
+    height: 3px;
+    width: 15%;
+    display: block;
+    margin: 0 auto;
+    background: #ff523b;
+}
+.launch-time {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.counter-box{
+    background-color: #555;
+    box-sizing: border-box;
+    width: 60px;
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+.launch-time .counter-box p.counter{
+    color: #fbff3b;
+    font-size: 32px;
+    margin: 0;
+    line-height: 30px;
+}
+.counter-box span{
+    color: #fff;
+}
 
 /*--------------------------------------------------New Arrivals-----------------------------------------------------*/
 .new-arrivals .row-1{
@@ -1841,6 +1902,13 @@ select.sort-by{
     }
 }
 
+/*--------------------------------------------------Deal of the Week-----------------------------------------------------*/
+@media only screen and (max-width: 759px)
+{
+    .deal-week .col-2{
+        flex-basis: 100%;
+    }
+}
 
 /*--------------------------------------------------Testing Animation -----------------------------------------------------*/
 
