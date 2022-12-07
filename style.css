@@ -703,7 +703,7 @@ a{
     justify-content: space-around;  
 }
 .head-banner .left-col{
-    flex-basis: 40%;
+    flex-basis: 50%;
     min-width: 300px;
     color: #222;
     margin: auto;
@@ -744,7 +744,7 @@ a{
     text-decoration: none;
 }
 .head-banner .right-col{
-    flex-basis: 60%;
+    flex-basis: 50%;
     min-width: 300px;
     display: flex;
     justify-content: center;
